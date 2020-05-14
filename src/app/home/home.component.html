@@ -1,1 +1,55 @@
-<p>home works!</p>
+<mat-grid-list cols="1" rowHeight="2:1">
+
+    <mat-grid-tile>
+    <!-- Show User Tools -->
+    <mat-grid-tile-header>Ihre beigetretenen Organisationen</mat-grid-tile-header>   
+    <mat-card class="example-card">     
+        <img mat-card-image src="https://www.rnz.de/cms_media/module_img/580/290036_2_org_image_62e5f9b6249e3cf6.jpg" alt="Hammer">
+        <mat-card-content>
+            <mat-card-title>HTWG Konstanz</mat-card-title>
+            <p>
+            Hier können alle HTWG Studenten ihre Werkzeuge teilen.
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="primary" matBadge="8" matBadgePosition="before" matBadgeColor="accent" [routerLink]="['/organisation']">
+                Zur Organisation   
+            </button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+    
+    
+    <!-- Show User Tools -->
+    <mat-grid-tile>
+        <mat-grid-tile-header>Ihre eingestellten Werkzeuge</mat-grid-tile-header>
+        
+        <mat-card class="example-card" [routerLink]="['/creat-tool']">     
+            
+            <mat-card-content>
+                <mat-card-title>Fügen sie eine Werkezug hinzu</mat-card-title>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Moritz Gebhardt</mat-card-title>
+              <mat-card-subtitle>Grießeggstraße 7, 78462 Konstanz</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://www.campstuff.de/pub/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/k/a/kampa_thor_club_hammer.jpg" alt="Hammer">
+            <mat-card-content>
+                <mat-card-title>Hammer</mat-card-title>
+                <p>
+                Der Hammer kann für alles verwendet werden. 
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-raised-button color="primary" matBadge="8" matBadgePosition="before" matBadgeColor="accent">
+                    Kontaktdaten    
+                </button>
+            </mat-card-actions>
+          </mat-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-tile-footer>Hier kommt der Footer hin</mat-grid-tile-footer>    

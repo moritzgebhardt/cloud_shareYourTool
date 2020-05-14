@@ -1,0 +1,16 @@
+.example-card {
+    max-width: 300px;
+    border-color: grey;
+    border-width: 0.75px;
+    border-style: groove;
+    margin-right: 30px;
+    
+  }    
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+.mat-grid-tile {
+    border-radius: 10px;
+    position: relative;          
+}
