@@ -6,8 +6,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { OrganisationComponent } from './organisation/organisation.component';
 import { ToolComponent } from './tool/tool.component';
-import { CreatOrganisationComponent } from './organisation/creat-organisation/creat-organisation.component';
-import { CreatToolComponent } from './tool/creat-tool/creat-tool.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
@@ -17,14 +15,14 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { CreateToolComponent } from './tool/create-tool/create-tool.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     OrganisationComponent,
     ToolComponent,
-    CreatOrganisationComponent,
-    CreatToolComponent
+    CreateToolComponent
   ],
   imports: [
     BrowserModule,
