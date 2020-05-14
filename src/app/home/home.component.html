@@ -2,7 +2,9 @@
 
     <mat-grid-tile>
     <!-- Show User Tools -->
-    <mat-grid-tile-header>Ihre beigetretenen Organisationen</mat-grid-tile-header>   
+    <mat-grid-tile-header>Ihre beigetretenen Organisationen
+        <button mat-button color="primary" [routerLink]="['/organisation']">Organisationen beitreten</button>
+    </mat-grid-tile-header>
     <mat-card class="example-card">     
         <img mat-card-image src="https://www.rnz.de/cms_media/module_img/580/290036_2_org_image_62e5f9b6249e3cf6.jpg" alt="Hammer">
         <mat-card-content>
@@ -22,15 +24,9 @@
     
     <!-- Show User Tools -->
     <mat-grid-tile>
-        <mat-grid-tile-header>Ihre eingestellten Werkzeuge</mat-grid-tile-header>
-        
-        <mat-card class="example-card" [routerLink]="['/creat-tool']">     
-            
-            <mat-card-content>
-                <mat-card-title>Fügen sie eine Werkezug hinzu</mat-card-title>
-            </mat-card-content>
-        </mat-card>
-
+        <mat-grid-tile-header>Ihre eingestellten Werkzeuge
+            <button mat-button color="primary" [routerLink]="['/creat-tool']">Werkzeug hinzufügen</button>
+        </mat-grid-tile-header>        
         <mat-card class="example-card">
             <mat-card-header>
               <div mat-card-avatar class="example-header-image"></div>
